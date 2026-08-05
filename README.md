@@ -112,8 +112,34 @@ olist_ml_pipeline/
 │ └── predict.py # Day 11: UDF deployment & scoring
 ├── sql/
 │ ├── 01_create_features_table.sql # Creates customer_features_with_label
-```
+
 │ ├── 02_daily_sales_summary.sql # Daily sales dashboard
 │ └── 03_monitoring.sql # Monitoring queries
 └── notebooks/
 └── exploration.ipynb # Data exploration (optional)
+```
+
+
+---
+
+## 🚀 Prerequisites
+
+### Snowflake Requirements
+- A Snowflake account with **ACCOUNTADMIN** privileges (or sufficient permissions)
+- Database: `ALIM_DB`
+- Schema: `ALIM_SCHEMA`
+- Warehouse: `COMPUTE_WH` (or your preferred warehouse)
+
+### Olist Dataset
+The Olist dataset must be loaded into your Snowflake schema. It should include these tables:
+- `olist_customers`
+- `olist_orders`
+- `olist_order_items`
+- `olist_order_payments`
+- `olist_order_reviews`
+- `olist_products`
+- `olist_sellers`
+
+### Python Dependencies
+```bash
+pip install -r requirements.txt
