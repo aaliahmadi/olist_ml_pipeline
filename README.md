@@ -112,7 +112,6 @@ olist_ml_pipeline/
 │ └── predict.py # Day 11: UDF deployment & scoring
 ├── sql/
 │ ├── 01_create_features_table.sql # Creates customer_features_with_label
-
 │ ├── 02_daily_sales_summary.sql # Daily sales dashboard
 │ └── 03_monitoring.sql # Monitoring queries
 └── notebooks/
